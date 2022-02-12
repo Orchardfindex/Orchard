@@ -1,6 +1,8 @@
 import React from 'react';
 import {FaDiscord, FaTwitter, FaTelegramPlane, FaGithub, FaYoutube, FaMediumM} from 'react-icons/fa';
+import { AiOutlineCopyright } from "react-icons/ai";
 import logo from '../../images/Orchard.svg';
+
 import {
   FooterContainer,
   FooterWrap,
@@ -11,9 +13,11 @@ import {
   FooterLinkTitle,
   FooterLink,
   SocialMediaWrap,
-  SocialLogo,
   SocialIcons,
-  SocialIconLink} from './FooterElements';
+  SocialIconLink, 
+  Copyright,
+  CopyrightP
+} from './FooterElements';
 
 const Footer = () => {
   return (
@@ -27,7 +31,7 @@ const Footer = () => {
                 <FooterLink to="/signin">Contact</FooterLink>
                 <FooterLink to="/signin">Careers</FooterLink>
                 <FooterLink to="/signin">Whitepaper</FooterLink>
-                <FooterLink to="/signin">Partners</FooterLink>
+                <FooterLink to="/signin">Investors</FooterLink>
                 <FooterLink to="/signin">Terms of Use</FooterLink>
               </FooterLinkItems>
 
@@ -42,11 +46,11 @@ const Footer = () => {
                 <FooterLinkTitle>Participate</FooterLinkTitle>
                 <FooterLink to="/signin">Community</FooterLink>
                 <FooterLink to="/signin">Events</FooterLink>
+                <FooterLink to="/signin">Forum</FooterLink>
               </FooterLinkItems>
             </FooterLinkWrapper>
           </FooterLinkContainer>
           <SocialMediaWrap>
-            <SocialLogo to='/'></SocialLogo>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Discord">
                 <FaDiscord />
@@ -72,6 +76,10 @@ const Footer = () => {
                 <FaMediumM />
               </SocialIconLink>
               </SocialIcons>
+              
+              <Copyright>
+                <CopyrightP><AiOutlineCopyright />2022 Orchard. All rights reserved.</CopyrightP>
+              </Copyright>
             </SocialMediaWrap>
           </FooterWrap>
       </FooterContainer>

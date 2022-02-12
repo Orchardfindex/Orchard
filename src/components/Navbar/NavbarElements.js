@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   display: flex;  
-  background: #E2E2E2; 
+  background: #F9FEF9; 
   height: 80px;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   position: sticky;
   z-index: 10;
 
-  @media screen and (max-width: 864px) {
+  @media screen and (max-width: 1024px) {
     transition: 0.8s all ease;
   }
 `;
@@ -29,26 +29,32 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)` 
   display: flex;
-  gap: 10px;
+  grid-column-gap: 10px;
   justify-self: flex-start;
   align-items: center;
   color: #00A200;
   font-size: 36px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-left: 10px;
   text-decoration: none;
   cursor: pointer;
+
+  @media screen and (max-width: 428px) {
+    margin-left: 0px;
+  }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
   
-  @media screen and (max-width: 428px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     position: absolute;
+    top: 0;
+    right: 0;
     font-size: 28px;
     color: #000;
-    transform: translate(-100%, 50%);
+    transform: translate(-100%, 60%); //position 
     cursor: pointer;
   }
 `;
@@ -58,16 +64,16 @@ export const NavMenu = styled.ul`
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  margin-right: -20px;
+  margin: auto;
   list-style: none;
 
-  @media screen and (max-width: 428px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 80px; 
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -82,7 +88,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #00bb00;
+    border-bottom: 3px solid #00B200;
   }
 `;
 
@@ -91,22 +97,25 @@ export const NavBtn = styled.nav`
   align-items: center;
   gap: 20px;
 
-  @media screen and (max-width: 864px) {
+  @media screen and (max-width: 1100px) { 
     display: none;
   }
 `;
 
 export const NavBtnLink = styled(LinkR)`
   background: #00B200;
+  border: 1.5px solid #E2E2E2;
   border-radius: 50px;
-  color: #000;
+  color: #fff;
   font-size: 16px;
+  font-weight: bold;
   padding: 10px 20px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     background: #00F200;
+    color: #000;
     transition: all 0.2s ease-in-out;
   }
 `;

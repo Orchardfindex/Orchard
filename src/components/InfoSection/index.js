@@ -26,8 +26,8 @@ const InfoSection = ({ //note synta
   description,
   buttonLabel,
   img,
-  primary,
-  dark}) => {
+  primary
+}) => {
     return (
       <InfoContainer lightBg={lightBg} id={id}> 
         <InfoWrapper>
@@ -44,7 +44,7 @@ const InfoSection = ({ //note synta
                 spy={true} //assign smooth scroll class
                 exact="true" 
                 offset={-80} //nav bar height
-                primary={primary ? 1 : 0} //return true/false
+                primary={primary ? 1 : 0} //return true or false
                 //dark={dark ? 1 : 0}
                 >{buttonLabel}</Button>
               </BtnWrap>

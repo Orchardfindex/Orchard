@@ -15,24 +15,23 @@ import {
 const Card = () => {
   return (
     <CardContainer id="services">
-      <CardH1>Our Features</CardH1>
       <CardWrapper>
         <CardCard>
           <CardIcon src={Icon1} />
           <CardH2>Earn Passive Income with our Sprout Index Fund</CardH2>
-          <CardP>Get rewarded with Fruitti tokens and compound interests via Yield Farming.</CardP>
+          <CardP>Get rewarded with Fruitti tokens and compound interests via Yield Farming</CardP>
         </CardCard>
 
         <CardCard>
           <CardIcon src={Icon2} />
-          <CardH2>Set Protocol is the leading protocol in the index market</CardH2>
-          <CardP>A DeFi platform to create, rebalance and manage portfolios of ERC-20 tokenized assets.</CardP>
+          <CardH2> Set Protocol, Industry-Leading Protocol for DeFi Index</CardH2>
+          <CardP>A DeFi platform to create, rebalance and manage portfolios of ERC-20 tokenized assets</CardP>
         </CardCard>
 
         <CardCard>
           <CardIcon src={Icon3} />
           <CardH2>Join the Polygon Community</CardH2>
-          <CardP>Join a vibrant community, #Polygon, and shape the future of Orchard.</CardP>
+          <CardP>Join a vibrant community, #Polygon, and shape the future of Orchard</CardP>
         </CardCard>
       </CardWrapper>
     </CardContainer>
