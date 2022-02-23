@@ -4,7 +4,7 @@ import Icon2 from '../../images/setprotocol.svg';
 import Icon3 from '../../images/polygon.svg';
 import {
   CardContainer, 
-  CardH1,
+  //CardH1,
   CardWrapper,
   CardCard,
   CardIcon,
