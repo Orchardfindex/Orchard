@@ -64,6 +64,7 @@ export const FooterLinkTitle = styled.h1`
   font-size: 16px;
   letter-spacing: 1.2px;
   margin-bottom: 15px;
+  font-weight: 600;
 `
 
 export const FooterLink = styled(Link)`

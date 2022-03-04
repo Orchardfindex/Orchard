@@ -22,7 +22,7 @@ const HeroSection = () => {
        <HeroH1>A Specially Curated Sprout Index Fund</HeroH1>
         <HeroP>To earn real-time returns and long-term capital growth on your assets!</HeroP>
         <HeroBtnWrapper>
-            <Button to="buy">
+            <Button to="/buy">
               Buy Sprout {<ArrowUpRight2 />}
             </Button>
         </HeroBtnWrapper>

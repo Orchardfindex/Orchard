@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { TransactionContext } from "../../context/TransactionContext.js";
 //import Dropdown from './Dropdown';
 import { FaBars } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
@@ -18,6 +19,17 @@ import {
 } from "./NavbarElements";
 
 export default function Navbar({ toggle }) {
+  const { connectWallet, currentAccount } = useContext(TransactionContext);
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+    if (!currentAccount) return;
+    setUserName(
+      `${currentAccount.slice(0, 5)}...${currentAccount.slice(35, -1)}`
+    );
+  }, [currentAccount]);
+
+  console.log({ connectWallet, currentAccount });
 
   return (
     <Nav>
@@ -31,11 +43,13 @@ export default function Navbar({ toggle }) {
         </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks to="sprout">Sprout</NavLinks>
+            <NavLinks>
+              <Link to="/Sprout">Sprout</Link>
+            </NavLinks>
           </NavItem>
 
           <NavItem>
-            <NavLinks>
+            <NavLinks to="/">
               <Link to="/Swap">Trade</Link>
             </NavLinks>
           </NavItem>
@@ -57,7 +71,19 @@ export default function Navbar({ toggle }) {
           </NavItem>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to="/signin" >Connect Wallet</NavBtnLink>
+          {currentAccount ? (
+            <NavBtnLink>
+              <Link to="/dashboard">{userName}</Link>
+            </NavBtnLink>
+          ) : (
+            <NavBtnLink
+              onClick={() => {
+                connectWallet();
+              }}
+            >
+              Connect Wallet
+            </NavBtnLink>
+          )}
           <SettingIcon onClick={toggle}>
             <IoMdSettings />
           </SettingIcon>

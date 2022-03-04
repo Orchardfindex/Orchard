@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.0",
+    "dotenv": "^10.0.0",
     "ethers": "^5.5.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -50,7 +52,7 @@
     "autoprefixer": "^10.4.2",
     "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
-    "postcss": "^8.4.6",
+    "postcss": "^8.4.7",
     "tailwindcss": "^3.0.23",
     "url-loader": "^4.1.1"
   }

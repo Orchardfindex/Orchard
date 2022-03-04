@@ -10,6 +10,8 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 20px;
   position: sticky;
+  top: 0;
+  left: 0;
   z-index: 10;
 
   @media screen and (max-width: 1024px) {
@@ -102,7 +104,8 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+//export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.div`
   background: #00B200;
   border: 1.5px solid #E2E2E2;
   border-radius: 50px;
@@ -111,6 +114,7 @@ export const NavBtnLink = styled(LinkR)`
   font-weight: bold;
   padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 
   &:hover {

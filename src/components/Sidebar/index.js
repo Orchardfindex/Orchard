@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { TransactionContext } from "../../context/TransactionContext.js";
 import {
   SidebarContainer,
   Icon,
@@ -11,6 +13,15 @@ import {
 } from './SidebarElements';
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const { connectWallet, currentAccount } = useContext(TransactionContext);
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+    if (!currentAccount) return;
+    setUserName(`${currentAccount.slice(0,5)}...${currentAccount.slice(35,-1)}`);
+    console.log("I am a", typeof currentAccount);
+  }, [currentAccount]);
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -26,7 +37,14 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="about" onClick={toggle}>Others</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/connect">Connect Wallet</SidebarRoute>
+          {/* <SidebarRoute onClick={() => {
+                connectWallet();
+              }}>Connect Wallet</SidebarRoute> */}
+          {currentAccount ? (
+            <SidebarRoute><Link to="/dashboard">{userName}</Link></SidebarRoute>
+          ) : (
+            <SidebarRoute onClick={() => { connectWallet() }}>Connect Wallet</SidebarRoute>
+          )}
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
