@@ -1,6 +1,6 @@
 import React from 'react';
 import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElements';
+import { Button } from '../../globalStyles';
 import {
   HeroContainer,
   HeroBg,
@@ -9,7 +9,7 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowUpRight2
+  ArrowUpRight
 } from './HeroElements';
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <HeroP>To earn real-time returns and long-term capital growth on your assets!</HeroP>
         <HeroBtnWrapper>
             <Button to="buy">
-              Buy Sprout {<ArrowUpRight2 />}
+              Buy Sprout {<ArrowUpRight />}
             </Button>
         </HeroBtnWrapper>
       </HeroContent>

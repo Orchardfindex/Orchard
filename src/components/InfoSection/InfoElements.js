@@ -1,17 +1,18 @@
 import styled from 'styled-components';
+import { Button } from '../../globalStyles';
 
 export const InfoContainer = styled.div`
-  background: ${({lightBg}) => (lightBg ? '#000' : '#F9FEF9')};
+  background: ${({lightBg}) => (lightBg ? '#000' : '#FFF')};
 
   @media screen and (max-width: 500px) {
-    padding-top: 50px; //Space bet HeroSection, InfoContainer & CardContainer
+    padding-top: 3.125rem; //Space bet HeroSection, InfoContainer & CardContainer
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: flex;
   justify-content: center;
-  height: 600px; 
+  height: 37.5rem; 
   width: 100%;
   max-width: 1728px;
   margin: auto;
@@ -24,7 +25,7 @@ export const InfoRow = styled.div`
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
   align-items: center;
 
-  @media screen and (max-width: 834px) {
+  @media screen and (max-width: 864px) {
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
   }
 `;
@@ -42,36 +43,36 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 500px;
+  max-width: 31.25rem;
 `;
 
 export const TopLine = styled.p`
   color: #00A200;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1.4px;
+  line-height: 1.5rem;
+  letter-spacing: 0.075rem;
   text-transform: uppercase; 
-  margin-bottom: 15px;
+  margin-bottom: 0.875rem;
 `;
 
 export const Heading = styled.h1` 
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 0.875rem;
   color: ${({lightText}) => (lightText ? '#000' : '#fff')};
   
   @media screen and (max-width: 864px) {
-    font-size: 32px;
+    font-size: 2rem;
   }
 `;
 
 export const Subtitle = styled.p`
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 25px;
-  margin-bottom: 30px;
-  max-width: 480px;
+  line-height: 1.563rem;
+  margin-bottom: 1.875rem;
+  max-width: 30rem;
   color: ${({darkText}) => (darkText ? '#fff' : '#000')};
 `;
 
@@ -80,13 +81,26 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 
+export const InfoButton = styled(Button)`
+  ${Button};
+
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+  }
+`;
+
 export const ImgWrap = styled.div`
-  max-width: 500px;
-  height: 100%;
+  max-width: 31.25rem;
+  margin: auto;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  height: auto;
-  border-radius: 15px;
+  height: auto; //responsive
+  border-radius: 1.25rem;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    max-height: 20rem; 
+  }
 `;

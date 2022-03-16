@@ -5,11 +5,10 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F9FEF9;
+  background: #FFF;
   height: 600px;
   padding: 0 30px;
   position: relative;
-  z-index: 1;
 `
 
 export const HeroBg = styled.div`
@@ -34,17 +33,17 @@ export const HeroContent = styled.div`
   align-items: center;
   padding: 10px 25px;
   max-width: 864px; 
-  z-index: 3;
+
 `
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 60px;
+  font-size: 52px;
   text-align: center;
 
-  @media screen and {max-width: 864px} {
+  @media screen and (max-width: 864px) {
     font-size: 48px;
   }
-  @media screen and {max-width: 428px} {
+  @media screen and (max-width: 428px) {
     font-size: 32px;
   }
 `
@@ -56,10 +55,10 @@ export const HeroP = styled.p`
   margin-top: 25px;
   text-align: center;
  
-  @media screen and {max-width: 864px} {
+  @media screen and (max-width: 864px) {
     font-size: 24px;
   }
-  @media screen and {max-width: 428px} {
+  @media screen and (max-width: 428px) {
     font-size: 20px;
   }
 `
@@ -71,7 +70,7 @@ export const HeroBtnWrapper = styled.div`
   margin-top: 30px;
 `
 
-export const ArrowUpRight2 = styled(ImArrowUpRight2)`
+export const ArrowUpRight = styled(ImArrowUpRight2)`
   font-size: 20px;
   margin-left: 10px;
 `

@@ -4,7 +4,6 @@ import Icon2 from '../../images/setprotocol.svg';
 import Icon3 from '../../images/polygon.svg';
 import {
   CardContainer, 
-  CardH1,
   CardWrapper,
   CardCard,
   CardIcon,
@@ -24,7 +23,7 @@ const Card = () => {
 
         <CardCard>
           <CardIcon src={Icon2} />
-          <CardH2> Set Protocol, Industry-Leading Protocol for DeFi Index</CardH2>
+          <CardH2>Set Protocol, Industry-Leading Protocol for DeFi Index</CardH2>
           <CardP>A DeFi platform to create, rebalance and manage portfolios of ERC-20 tokenized assets</CardP>
         </CardCard>
 

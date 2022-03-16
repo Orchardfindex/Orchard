@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
 import {
   InfoContainer, 
   InfoWrapper,
@@ -11,11 +10,12 @@ import {
   Heading,
   Subtitle, 
   BtnWrap,
+  InfoButton,
   ImgWrap,
   Img
 } from './InfoElements';
 
-const InfoSection = ({ //note synta
+const InfoSection = ({ //note syntax
   lightBg,
   id,
   imgStart,
@@ -38,7 +38,7 @@ const InfoSection = ({ //note synta
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Button to='home'
+                <InfoButton to='home'
                 smooth={true}
                 duration={500}
                 spy={true} //assign smooth scroll class
@@ -46,13 +46,14 @@ const InfoSection = ({ //note synta
                 offset={-80} //nav bar height
                 primary={primary ? 1 : 0} //return true or false
                 //dark={dark ? 1 : 0}
-                >{buttonLabel}</Button>
+                >{buttonLabel}
+                </InfoButton>
               </BtnWrap>
             </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-              <Img src={img}/>
+                <Img src={img} />
               </ImgWrap>
             </Column2>      
           </InfoRow>

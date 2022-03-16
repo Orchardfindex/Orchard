@@ -72,6 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### `Viewport` Screen Width Size 
 
 13" Iphone Pro: 428px (Small)
-16" Macbook Pro Split Screen: 864px (Medium)
+12.9" Ipad Pro: 1024px (Medium)
 16" Macbook Pro: 1728px (Largest)
 

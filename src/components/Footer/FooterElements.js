@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import { AiOutlineCopyright } from "react-icons/ai";
 
 export const FooterContainer = styled.footer`
-  background-color: #F9FEF9;
+  background-color: #FFF;
 `
 
 export const FooterWrap = styled.div`
@@ -30,12 +31,12 @@ export const Logo = styled.img`
   display: flex;
   align-items: center;
   position: relative;
-  left: -200px;
-  width: 75px;
-  height: 75px;
+  left: -12.5rem;
+  width: 5rem;
+  height: 5rem;
 
   @media screen and (max-width: 1024px) {
-    left: -150px;
+    left: -9.375rem;
   }
 
   @media screen and (max-width: 428px) {
@@ -49,28 +50,28 @@ export const FooterLinkItems = styled.div`
   align-items: flex-start;
   text-align: left;
   color: #000;
-  width: 150px;
-  margin: 15px;
+  width: 9.375rem;
+  margin: 0.938rem;
   box-sizing: border-box;
 
   @media screen and (max-width: 428px) {
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
     margin: 0;
   }
 `
 
 export const FooterLinkTitle = styled.h1`
-  font-size: 16px;
-  letter-spacing: 1.2px;
-  margin-bottom: 15px;
+  font-size: 1.125rem;
+  letter-spacing: 0.075rem;
+  margin-bottom: 0.875rem;
 `
 
 export const FooterLink = styled(Link)`
   color: #000;
-  font-size: 14px;
-  letter-spacing: 1.2px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.075rem;
+  margin-bottom: 0.625rem;
   text-decoration: none;
 
   &:hover{
@@ -84,14 +85,14 @@ export const SocialMediaWrap = styled.div`
   position: relative;           
   justify-content: center;
   align-items: center;
-  padding: 50px 25px;
+  padding: 3.125rem 1.25rem;
   max-width: 1728px;
   margin: 0 auto;
-  left: 150px;
+  left: 9.375rem;
 
   @media screen and (max-width: 500px) {
     flex-wrap: wrap;
-    left: 0px;
+    left: 0;
   }
 `
 
@@ -99,37 +100,44 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 15.625rem;
 `
 
 export const SocialIconLink = styled.a`
   color: #000;
-  font-size: 24px;
+  font-size: 1.5rem;
+  cursor: pointer;
 `
 
 export const Copyright = styled.div`
   display: flex;
+  flex-wrap: nowrap;
   position: relative;
-  left: 275px;
+  left: 16.875rem;
 
   @media screen and (max-width: 1024px) { 
-    left: 80px; 
+    left: 5rem; 
   }
 
   @media screen and (max-width: 500px) {
     flex-wrap: wrap; //next line
     left: 0px;
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
 `
 export const CopyrightP = styled.p`
   display: flex; 
-  align-items: center; //centre copyright icon
+  justify-content: center;
+  align-items: center; 
   color: #000;
-  font-size: 16px;
-  font-style: italic;
+  font-size: 1rem;
+
+  @media screen and (max-width: 1024px) { 
+    left: 80px; 
+  }
 `
 
-
-
-
+export const CopyrightIcon = styled(AiOutlineCopyright)`
+  font-size: 1rem;
+  padding-right: 0.15rem;
+`
