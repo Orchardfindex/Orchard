@@ -78,7 +78,7 @@
   color: #FFF;
   font-size: 0.875rem;
 	text-transform: uppercase;
-	letter-spacing: 2%
+	letter-spacing: 2%;
 }
 .Sprout th, td {
   padding: 8px;
@@ -176,13 +176,17 @@
   }
 }
 @media screen and (max-width: 478px) {
-  .Sprout .container .right .card {
+  .Sprout .container .table_container .right .card {
     width: 100%;
   }
-  .table thead {
+  
+}
+
+@media(max-width: 500px) {
+  .Sprout.table thead {
     display: none;
   }
-  .table tbody, .table tr, .table td{
+  .table, .table tbody, .table tr, .table td{
     display: block;
     width: 100%;
   }

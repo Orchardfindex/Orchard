@@ -36,7 +36,7 @@ export default function Navbar({ toggle }) {
       <NavbarContainer>
         <NavLogo to="/">
           <img src={logo} alt="" width={50} height={50} />
-          Orchard
+          Equator
         </NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
@@ -44,7 +44,7 @@ export default function Navbar({ toggle }) {
         <NavMenu>
           <NavItem>
             <NavLinks>
-              <Link to="/Sprout">Sprout</Link>
+              <Link to="/Sprout">Equator</Link>
             </NavLinks>
           </NavItem>
 

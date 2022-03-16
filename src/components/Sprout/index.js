@@ -4,6 +4,7 @@ import index_components from "./index_component.json";
 import useFetch from "../useFetch";
 import Allocation_Table from "./Allocation_Table";
 import Display_Coin from "./Display_Coin";
+import Loader from "../loader";
 
 const Sprout = () => {
   let url =
@@ -21,7 +22,7 @@ const Sprout = () => {
 
   console.log(data);
 
-  if (loading) return <h1>LOADING</h1>;
+  if (loading) return <Loader />;
 
   if (error) console.log(error);
 
