@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@uniswap/sdk-core": "^3.0.1",
+    "@uniswap/v3-sdk": "^3.8.2",
     "axios": "^0.26.0",
     "dotenv": "^10.0.0",
     "ethers": "^5.5.4",
@@ -17,6 +19,8 @@
     "react-scroll": "^1.8.4",
     "react-toggle": "^4.1.2",
     "styled-components": "5.3.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
     "web-vitals": "^2.1.4",
     "wouter": "^2.8.0-alpha.2"
   },
@@ -48,12 +52,13 @@
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/preset-react": "^7.16.7",
-    "@types/node": "^16.11.22",
+    "@types/node": "^16.11.26",
     "autoprefixer": "^10.4.2",
     "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "postcss": "^8.4.7",
     "tailwindcss": "^3.0.23",
+    "tslib": "^2.3.1",
     "url-loader": "^4.1.1"
   }
 }

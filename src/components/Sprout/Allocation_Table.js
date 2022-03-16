@@ -12,7 +12,7 @@ const Allocation_Table = (data, index_component) => {
   console.log("total token value", total_token_value);
 
   return (
-    <table cellPadding="10" cellSpacing={10}>
+    <table>
       <thead>
         <tr>
           <th>Underlying token</th>
