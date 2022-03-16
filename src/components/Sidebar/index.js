@@ -23,18 +23,21 @@ const Sidebar = ({ isOpen, toggle }) => {
   }, [currentAccount]);
 
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
+    <>
+      <IconWrap to='#' > 
+        <OpenIcon onClick={toggle} />
+      </IconWrap>
+      <SidebarContainer open={open}>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>Sprout</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>Earn</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>Trade</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>Dashboard</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>Analytics</SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>Others</SidebarLink>
+          <IconWrap2 to='#'> 
+            <CloseIcon onClick={toggle} />
+          </IconWrap2>
+          {SidebarData.map((item, index) => { //return navbar items
+            return <SubMenu item={item} key={index} />; //pass item as argument
+          })}
+          <SideBtnWrap>
+            <SidebarButton to='/connect'>Connect Wallet</SidebarButton>
+          </SideBtnWrap>
         </SidebarMenu>
         <SideBtnWrap>
           {/* <SidebarRoute onClick={() => {

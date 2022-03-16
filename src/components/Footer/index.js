@@ -1,6 +1,5 @@
 import React from 'react';
-import {FaDiscord, FaTwitter, FaTelegramPlane, FaGithub, FaYoutube, FaMediumM} from 'react-icons/fa';
-import { AiOutlineCopyright } from "react-icons/ai";
+import { FaDiscord, FaTwitter, FaTelegramPlane, FaGithub, FaYoutube, FaMediumM } from 'react-icons/fa';
 import logo from '../../images/Orchard.svg';
 
 import {
@@ -16,7 +15,8 @@ import {
   SocialIcons,
   SocialIconLink, 
   Copyright,
-  CopyrightP
+  CopyrightP, 
+  CopyrightIcon
 } from './FooterElements';
 
 const Footer = () => {
@@ -78,7 +78,9 @@ const Footer = () => {
               </SocialIcons>
               
               <Copyright>
-                <CopyrightP><AiOutlineCopyright />2022 Orchard. All rights reserved.</CopyrightP>
+                <CopyrightP>
+                  <CopyrightIcon />2022 Orchard. All Rights Reserved.
+                </CopyrightP>
               </Copyright>
             </SocialMediaWrap>
           </FooterWrap>
