@@ -1,0 +1,52 @@
+[
+  {
+    "name": "bitcoin",
+    "allocation": 0.2,
+    "quantity": 0.4879235
+  },
+  {
+    "name": "ethereum",
+    "allocation": 0.2,
+    "quantity": 7.30137521
+  },
+  {
+    "name": "matic-network",
+    "allocation": 0.1,
+    "quantity": 6451.6129
+  },
+  {
+    "name": "chainlink",
+    "allocation": 0.1,
+    "quantity": 694.927033
+  },
+  {
+    "name": "uniswap",
+    "allocation": 0.05,
+    "quantity": 541.125541
+  },
+  {
+    "name": "the-sandbox",
+    "allocation": 0.05,
+    "quantity": 1633.98693
+  },
+  {
+    "name": "decentraland",
+    "allocation": 0.05,
+    "quantity": 1923.07692
+  },
+  {
+    "name": "the-graph",
+    "allocation": 0.05,
+    "quantity": 14084.507
+  },
+  {
+    "name": "aave",
+    "allocation": 0.05,
+    "quantity": 38.3494401
+  },
+  {
+    "name": "usd-coin",
+    "alloaction": 0.15,
+    "quantity": 15000
+  }
+]

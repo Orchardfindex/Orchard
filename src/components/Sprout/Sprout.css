@@ -1,0 +1,212 @@
+.Sprout h2{
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+.Sprout h3 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.Sprout h5{
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.Sprout p{
+  font-size: 1.2rem;
+}
+.Sprout {
+  width:100%;
+  padding: 2rem;
+  /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
+}
+.Sprout .container {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr 380px;
+  justify-content: center; 
+  /* align-items: center;  */
+  padding: 1rem;
+}
+
+.Sprout .left{
+  display: flex;
+  padding-bottom: 2rem;
+  flex-direction: column;
+  margin-right: 20px;
+
+}
+.Sprout .left p {
+  margin: 1.5rem 0;
+}
+
+.Sprout .left .btn {
+  align-self: flex-start;
+}
+.Sprout .current_price_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.Sprout .current_price_inner_container {
+  display: flex;
+}
+.Sprout .current_price_div {
+  padding-right: 32px;
+}
+
+.Sprout .stat_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+.Sprout .stat {
+  margin-bottom: 20px;
+}
+
+.Sprout table{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+	vertical-align: middle
+}
+.Sprout thead{
+  background-color: #333;
+  color: #FFF;
+  font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+.Sprout th, td {
+  padding: 8px;
+}
+
+.Sprout tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.Sprout tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* .Sprout tbody th {
+  background-color: #36c;
+  color: #fff;
+  text-align: left;
+}
+.Sprout tbody tr:nth-child(even) th {
+  background-color: #25c;
+} */
+.Sprout .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Sprout .right .card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 22px;
+  margin: .4rem;
+  width: 170px;
+  height: 170px;
+  border-radius: 24px;
+  border: 1px solid #d3d3d3;
+  box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+  text-align: center;
+}
+.Sprout .right .card:hover {
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Sprout .card .top {
+  display: flex;
+  flex-direction: column;
+}
+.Sprout .right img {
+  width: 50px;
+  margin: auto;
+  padding: .2rem 0;
+}
+
+.Sprout .icon {
+  font-size: 22px;
+}
+
+
+.Sprout .btn {
+  padding: 14px 32px;
+  margin-left: 30px;
+  border: 1px solid #24b407;
+  background: #24b407;
+  color: #fff;
+  border-radius: 24px 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.Sprout .btn:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+.Sprout .p24h {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 6px;
+}
+.green {
+  color: #24b407;
+}
+
+.red {
+  color: #ff0000;
+}
+
+@media screen and (max-width: 940px) {
+  .Sprout .container {
+    grid-template-columns: 1fr;
+  }
+
+  .Sprout .left .btn {
+    align-self: center;
+
+  }
+}
+@media screen and (max-width: 478px) {
+  .Sprout .container .table_container .right .card {
+    width: 100%;
+  }
+  
+}
+
+@media(max-width: 500px) {
+  .Sprout.table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td{
+    display: block;
+    width: 100%;
+  }
+  .table tr{
+    margin-bottom: 15px;
+  }
+ .table td{
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

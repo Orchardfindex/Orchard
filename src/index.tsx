@@ -7,7 +7,7 @@ import { HashRouter } from 'react-router-dom'
 import { NetworkContextName, sentryRequestId } from './constants'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import { LanguageProvider } from './i18n'
-import App from './pages/App'
+import App from './App'
 import store from './state'
 import ApplicationUpdater from './state/application/updater'
 import ListsUpdater from './state/lists/updater'
@@ -95,7 +95,7 @@ const ReactApp = ({ hideLoader }: { hideLoader: () => void }) => {
         title="KyberSwap - Swap and earn tokens at the best rates"
         description="KyberSwap is DeFi‚Äôs first Dynamic Market Maker; a decentralized exchange protocol that provides frictionless crypto liquidity with extremely high flexibility and capital efficiency. KyberSwap is the first major protocol in Kyber‚Äôs liquidity hub."
       />
-      <FixedGlobalStyle />
+      {/* <FixedGlobalStyle /> */}
       <Provider store={store}>
         <HashRouter>
           <LanguageProvider>
